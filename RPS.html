@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The game of rock-paper-scissors</title>
+    <link rel="stylesheet" href="RPS.css" />
+  </head>
+  <body>
+    <h1>
+      You are warmly welcome the game of Rock-Paper-Scissors. This is a very fun
+      game, you may try it!
+    </h1>
+    <button id="but">Show Game Details</button>
+    <p id="details">
+      This is the game of rock-paper-scissors, a very simple yet interesting
+      game. The initegrities of the game are as follows: You are to make a
+      choice among rock, paper and scissors, the computer also makes its choice
+      by making a random choice from among the above mentioned. If your choice
+      is equal to the computer's, it is a tie, else: if you pick Rock and the
+      computer picks scissors or paper, you have won. If you pick paper and the
+      computer picks scissors or rock, you have lost. if you pick scissors and
+      the computer picks rock or paper, then you can imagine what will happen to
+      you.
+    </p>
+    <div id="container">
+      <button onclick="playGame('Rock')" id="roc">🦅</button>
+      <button onclick="playGame('Paper')" id="pap">🐧</button>
+      <button onclick="playGame('Scissors')" id="sci">🦜</button>
+    </div>
+
+    <div>
+      <label for="playerChoice"
+        >Player Choice: <button id="ply">Player</button></label
+      >
+    </div>
+    <div>
+      <label for="ComputerChoice"
+        >Player Choice: <button id="comp">Computer</button></label
+      >
+    </div>
+    <div>
+      <label for="playerScore"
+        >Player Score: <button id="plysco">0</button></label
+      >
+    </div>
+    <label for="computerScore"
+      >Computer Score: <button id="compsco">0</button></label
+    >
+    <div></div>
+
+    <label for="remark">Remarks:<button id="rem">It's a tie!</button></label>
+    <h1>
+      Now that at least it working to some extend, I will end here for now and
+      hoping to continuing next time!
+    </h1>
+  </body>
+  <script src="RPS.js"></script>
+</html>

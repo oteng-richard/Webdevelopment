@@ -1,0 +1,121 @@
+body {
+  background-color: hsl(0, 0%, 5%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+#details {
+  display: none;
+  font-family: monospace;
+  font-size: 15px;
+  color: white;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 30%);
+  width: 400px;
+  height: 200px;
+  margin: 20px 300px;
+}
+
+#roc,
+#pap,
+#sci {
+  font-size: 4.5rem;
+  margin-left: 20px;
+  border-radius: 20px;
+  background-color: hsl(260, 40%, 20%);
+  display: flex;
+  flex-direction: column;
+  border: none;
+  cursor: pointer;
+}
+#roc:hover,
+#pap:hover,
+#sci:hover {
+  background-color: hsl(260, 40%, 30%);
+}
+
+h1 {
+  color: White;
+  font-size: 30px;
+  font-family: monospace;
+}
+
+#but {
+  font-size: 25px;
+  color: blue;
+  margin-top: 20px;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+label[for] {
+  font-family: monospace;
+  font-size: 30px;
+  color: blue;
+  margin: 30px 200px;
+}
+
+#ply,
+#plysco {
+  font-size: 20px;
+  font-family: monospace;
+  color: hsl(120, 90%, 30%);
+  margin-top: 30px;
+  cursor: pointer;
+}
+#ply:hover,
+#plysco:hover {
+  transition: 3s ease-in;
+  cursor: pointer;
+}
+
+#comp,
+#compsco {
+  font-size: 20px;
+  color: hsl(0, 90%, 50%);
+  font-family: monospace;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#comp:hover,
+#compsco:hover {
+  transform: 2s ease;
+}
+
+#rem {
+  font-size: 35px;
+  font-family: monospace;
+  margin: 50px 20px;
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+}
+
+#rem:hover {
+  background-color: hsl(0, 40%, 55%);
+  transition: 2s ease;
+}
+
+@media screen and (max-width<100px) {
+  #container {
+    width: 250px;
+    margin-left: 100px;
+  }
+  #roc,
+  #pap,
+  #sci {
+    font-size: 2.5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  label [for] {
+    font-size: 20px;
+    margin: 20px 100px;
+  }
+}
